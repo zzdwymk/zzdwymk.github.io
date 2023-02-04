@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.contain {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+.contain .img {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-image: url("../img/cover.jpg");
+    background-size: cover;
+    z-index: -1;
+}
+
+.logo {
+    width: 5em;
+    height: 2em;
+    line-height: 1.5em;
+    float: left;
+    font-size: 2.5em;
+    font-family: "华文行楷";
+    color: #fff;
+    transition: 5s;
+    background-image: linear-gradient(90deg, rgb(255, 169, 69), rgb(254, 134, 159), rgb(239, 122, 200), rgb(160, 131, 237), rgb(67, 174, 255), rgb(160, 131, 237), rgb(239, 122, 200), rgb(254, 134, 159), rgb(255, 169, 69));
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: logo 5s infinite linear;
+    position: relative;
+    top: 10px;
+    left: 3px;
+}
+
+@keyframes logo {
+    from {
+        background-position: 0%;
+    }
+    to {
+        background-position: 200%;
+    }
+}
+
+.left {
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    line-height: 50px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.left input {
+    display: none;
+}
+
+.left label {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    font-size: 20px;
+    color: #666;
+    padding-left: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.left ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: #20222a;
+    transition: all 0.5s;
+}
+
+.left ul li {
+    width: 100%;
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+.left ul li:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+}
+
+.left ul li a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #d2d2d2;
+    text-decoration: none;
+    border-left: 6px solid transparent;
+}
+
+.left ul li a i {
+    font-size: 18px;
+    margin: 0 15px;
+}
+
+.left ul li a span {
+    font-family: "华文新魏";
+    font-size: 20px;
+}
+
+.left ul li a:hover {
+    color: #fff;
+    border-left-color: #fb7299;
+}
+
+.left input:checked+label {
+    left: 0;
+}
+
+.left input:checked+label i {
+    transform: rotateY(180deg);
+}
+
+.left input:checked~ul {
+    left: -200px;
+}
+
+.h1 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: "华文行楷";
+    font-size: 5em;
+    background-image: linear-gradient(90deg, rgb(255, 169, 69), rgb(254, 134, 159), rgb(239, 122, 200), rgb(160, 131, 237), rgb(67, 174, 255), rgb(160, 131, 237), rgb(239, 122, 200), rgb(254, 134, 159), rgb(255, 169, 69));
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: h1 1s infinite linear;
+}
+
+@keyframes h1 {
+    from {
+        background-position: 0%;
+    }
+    to {
+        background-position: 200%;
+    }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "3846678",
+  "name": "综合",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "673799",
+      "name": "首页",
+      "font_class": "shouye",
+      "unicode": "e6cb",
+      "unicode_decimal": 59083
+    },
+    {
+      "icon_id": "2076244",
+      "name": " 内容2",
+      "font_class": "neirong2",
+      "unicode": "e889",
+      "unicode_decimal": 59529
+    },
+    {
+      "icon_id": "2569869",
+      "name": "登录",
+      "font_class": "denglu",
+      "unicode": "e67c",
+      "unicode_decimal": 59004
+    },
+    {
+      "icon_id": "33112323",
+      "name": "重要人物",
+      "font_class": "zhongyaorenwu",
+      "unicode": "e70d",
+      "unicode_decimal": 59149
+    }
+  ]
+}
